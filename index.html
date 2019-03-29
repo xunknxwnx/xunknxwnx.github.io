@@ -10,7 +10,19 @@ body {
 </style>
 </head>
 <body>
-
-<h1>Coming soon enough</h1>
+<form id="command_maker">
+  Command:<br>
+  <input type="text" name="command"><br>
+  Response:<br>
+  <input type="text" name="response"><br><br>
+  <input type="submit" value="Save Command" onclick="submit()">
+</form>
+<script>
+function submit() {
+ var thing = document.getElementById("command_maker")
+ var command = thing.elements['command'].value
+ var response = thing.elements['response'].value
+}
+</script>
 </body>
 </html>
