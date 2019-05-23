@@ -2,7 +2,7 @@
 <meta chartset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <head>
-<title>A Thing For A Thing</title>
+<title>How long until life is strange 2 episode 4</title>
 <style>
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -10,41 +10,22 @@ body {
 </style>
 </head>
 <body>
-<form id="command_maker">
-  Command:<br>
-  <input type="text" name="command"><br>
-  Response:<br>
-  <input type="text" name="response"><br><br>
-  <input type="submit" value="Save Command" onclick="submit()">
-</form>
+  <p id='demo'></p>
 <script>
- alert('ok so basically')
- alert('you did a big oof clicking that button')
- alert('time to annoy the ever loving shit out of you <3')
- alert('how ya doin')
- alert('im doin fine')
- alert('oh i dont care how youre doing its more of a formality than anything else smh')
- alert('thanks for asking about me')
- alert('i love you')
- alert('do you love me')
- alert('a')
- alert('b')
- alert('c')
- alert('d')
- alert('e')
- alert('f')
- alert('g')
- alert('h')
- alert('i')
- alert('j')
- alert('k')
- alert('l')
- alert('m')
- alert('n')
- alert('o')
- alert('what comes after o')
- alert('damn it you made me lose my place')
- alert('bye i dont like you')
+  var countdowndate=new Date("Aug 22, 2019").getTime()
+  var x = setInterval(() => {
+    var now=new Date().getTime();
+    var distance=countdowndate - now
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    document.getElementById("demo").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+    if (distance < 0) {
+      clearInterval(x);
+      document.getElementById("demo").innerHTML = "ITS OUT";
+    }
+  }, 1000);
 </script>
 </body>
 </html>
