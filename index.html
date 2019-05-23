@@ -33,7 +33,7 @@ body {
     var countupdate=new Date().getTime()
     var x = setInterval(() => {
       var tronch=new Date("Oct 5, 2018").getTime();
-      var distance=now-countupdate
+      var distance=tronch-countupdate
       var days = Math.floor(distance / (1000 * 60 * 60 * 24));
       var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
       var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
