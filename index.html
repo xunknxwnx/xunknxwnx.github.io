@@ -9,7 +9,6 @@ body {
 }
 </style>
   <p id='demo'></p>
-  <p id='aaa'></p>
 <script>
   var countdowndate=new Date("Aug 22, 2019").getTime()
   var x = setInterval(() => {
@@ -26,6 +25,11 @@ body {
       document.getElementById("demo").innerHTML = "ITS OUT";
     }
   }, 1000);
+</script>
+</head>
+<body>
+  <p id='aaa'></p>
+  <script>
     var countupdate=new Date().getTime()
     var x = setInterval(() => {
       var tronch=new Date("Oct 5, 2018").getTime();
@@ -37,9 +41,6 @@ body {
       document.getElementById('aaa').style.fontSize='xx-large';
       document.getElementById("aaa").innerHTML = "TRENCH - " + days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
     }, 1000);
-</script>
-</head>
-<body>
-haha yes
+  </script>
 </body>
 </html>
